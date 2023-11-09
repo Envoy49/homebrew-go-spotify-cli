@@ -1,35 +1,11 @@
-builds:
-  - id: "gsc"
-    binary: "gsc" # The name of the compiled binary
-    goos:
-      - darwin
-      - linux
-    goarch:
-      - amd64
-      - arm64
-    env:
-      - CGO_ENABLED=0
-    flags:
-      - -mod=vendor
-
-release:
-  prerelease: auto
-
-universal_binaries:
-  - replace: true
-
 brews:
   -
-    name: go-spotify-cli
-    homepage: "https://github.com/Envoy49/go-spotify-cli"
-    commit_author:
-      name: envoy49
-    folder: Formula
-    # Repository to push the generated files to.
-    repository:
-      owner: envoy49
+    tap:
+      owner: Envoy49
       name: homebrew-go-spotify-cli
-      branch: main
-
-checksum:
-  name_template: 'checksums.txt'
+    commit_author:
+      name: goreleaserbot
+      email: goreleaser@bot.com
+    folder: Formula
+    homepage: "https://github.com/Envoy49/go-spotify-cli"
+    description: "A CLI for Spotify"
