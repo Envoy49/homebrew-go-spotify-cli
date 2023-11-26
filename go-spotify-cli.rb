@@ -7,9 +7,10 @@ class GoSpotifyCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "go-spotify-cli"
+    system "go", "build", "-o", "go-spotify-cli", "./cmd/gsc"
     bin.install "go-spotify-cli"
   end
+
 
   test do
     system "#{bin}/go-spotify-cli", "--version"
