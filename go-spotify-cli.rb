@@ -1,8 +1,8 @@
 class GoSpotifyCli < Formula
   desc "A CLI tool for interacting with Spotify"
   homepage "https://github.com/Envoy49/go-spotify-cli"
-  url "https://github.com/Envoy49/go-spotify-cli/archive/refs/tags/v1.0.46.tar.gz"
-  sha256 "84edd9bbc5822c77e0859e3a03b91ce2994ce691d5d976872ec8542fa5034b09"
+  url "https://github.com/Envoy49/go-spotify-cli/archive/refs/tags/v1.0.48.tar.gz"
+  sha256 "47868863a696411aa14d1d38f44fb3841ed5a79a786fbe4874853457e5b3b5b2"
 
   depends_on "go" => :build
 
